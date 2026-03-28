@@ -80,6 +80,21 @@ iframe {
   border: none;
 }
 
+/* Full-width standard video layout */
+
+.project-video-bottom {
+  margin-top: 16px;
+}
+
+.project-video-bottom iframe {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  border: none;
+  display: block;
+}
+
 /* Mobile layout fix */
 
 @media (max-width: 700px) {
@@ -97,6 +112,11 @@ iframe {
     width: 100%;
     height: 300px;
   }
+
+  .project-video-bottom iframe {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
 
@@ -113,7 +133,7 @@ iframe {
 
 <h1>Stephen Boileau</h1>
 
-<p><strong>Technical Artist / Developer</strong></p>
+<p><strong>Developer / Technical Artist</strong></p>
 
 <p>
 I work in Unity, Unreal Engine, Python, tools development, and real-time interactive systems.
@@ -124,7 +144,7 @@ My work focuses on building reliable pipelines, tools, and animation systems tha
 
 <div class="project">
 
-<h3>Live Character System – Unreal Engine</h3>
+<h3>Live Character System – Unreal Engine (2024)</h3>
 
 <p>
 Technical Artist and Developer for a live Unreal Engine character experience used in a major theme park attraction.
@@ -146,7 +166,7 @@ The system drives a live animated puppet performing daily for park guests and re
 
 <div class="project">
 
-<h3>Moxie Robot – Real-Time Character System</h3>
+<h3>Moxie Robot – Real-Time Character System (2020)</h3>
 
 <div class="project-flex">
 
@@ -182,11 +202,7 @@ allowfullscreen>
 
 <div class="project">
 
-<h3>Chimelong Spaceship – Cute Animal Party</h3>
-
-<div class="project-flex">
-
-<div class="project-text">
+<h3>Chimelong Spaceship – Cute Animal Party (2022)</h3>
 
 <p>
 Joined the final stage of development on a live Unity-based character experience for Chimelong Spaceship, featuring animated characters performing in front of a live audience.
@@ -200,39 +216,19 @@ Resolved major performance issues by optimizing heavy assets in Autodesk Maya, p
 <strong>Tools:</strong> Unity, C#, Autodesk Maya, profiling, performance optimization.
 </p>
 
-</div>
-
-<div class="project-video">
-
+<div class="project-video-bottom">
 <iframe
 src="https://www.youtube.com/embed/M_pg9gNDUyY"
 title="Chimelong Cute Animal Party"
 allowfullscreen>
 </iframe>
-
-</div>
-
 </div>
 
 </div>
 
 <div class="project">
 
-<h3>Client Theater Visualizer</h3>
-
-<div class="project-flex">
-
-<div class="project-video-left">
-
-<iframe
-src="https://www.youtube.com/embed/eAIp_FIKcWA"
-title="Client Theater Visualizer"
-allowfullscreen>
-</iframe>
-
-</div>
-
-<div class="project-text">
+<h3>Client Theater Visualizer (2023)</h3>
 
 <p>
 Designed and built a Quest-based VR theater visualization tool that allowed clients to preview in-progress media inside accurately scaled virtual theater environments throughout development.
@@ -250,15 +246,19 @@ I created several theater visualizers during my time at Super 78, though some ca
 <strong>Tools:</strong> Unity, C#, Android, Meta Quest, Autodesk Maya, UV mapping, VR visualization.
 </p>
 
-</div>
-
+<div class="project-video-bottom">
+<iframe
+src="https://www.youtube.com/embed/eAIp_FIKcWA"
+title="Client Theater Visualizer"
+allowfullscreen>
+</iframe>
 </div>
 
 </div>
 
 <div class="project">
 
-<h3>Princess Cruises – 360 Dining Experience</h3>
+<h3>Princess Cruises – 360 Dining Experience (2023)</h3>
 
 <div class="project-flex">
 
@@ -288,6 +288,32 @@ Developed TouchDesigner and Python systems using OpenCV to track guest motion an
 
 </div>
 
+</div>
+
+</div>
+
+<div class="project">
+
+<h3>Dino on My Desk AR (2016)</h3>
+
+<p>
+Sole developer of an educational AR app for kids called <em>Dino on My Desk</em>, released in 2016 for Android and iOS. The experience followed a small dinosaur collecting objects while teaching players about the character and the historical period it came from.
+</p>
+
+<p>
+Built the application in Unity using C#, supported Android and iOS development, collaborated with Maya-based assets, and managed project workflows using Git.
+</p>
+
+<p>
+<strong>Tools:</strong> Unity, C#, Android, iOS, Git, Autodesk Maya, AR development.
+</p>
+
+<div class="project-video-bottom">
+<iframe
+src="https://www.youtube.com/embed/Lf7zBMjGxUY"
+title="Dino on My Desk"
+allowfullscreen>
+</iframe>
 </div>
 
 </div>
