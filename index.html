@@ -45,15 +45,6 @@ nav {
   display: block;
 }
 
-.clickable-image {
-  cursor: zoom-in;
-  transition: transform 0.2s ease;
-}
-
-.clickable-image:hover {
-  transform: scale(1.01);
-}
-
 iframe {
   max-width: 100%;
 }
@@ -98,50 +89,15 @@ iframe {
   margin-top: 16px;
 }
 
-.project-video-bottom iframe {
+.project-video-bottom iframe,
+.project-video-bottom video {
   width: 100%;
   max-width: 700px;
   aspect-ratio: 16 / 9;
   border-radius: 6px;
   border: none;
   display: block;
-}
-
-/* Image modal */
-
-.image-modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.92);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.image-modal img {
-  max-width: 95vw;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
-}
-
-.image-modal.active {
-  display: flex;
-}
-
-.close-modal {
-  position: absolute;
-  top: 20px;
-  right: 28px;
-  font-size: 36px;
-  color: white;
-  cursor: pointer;
-  line-height: 1;
-  user-select: none;
+  background: #000;
 }
 
 /* Mobile layout fix */
@@ -162,7 +118,8 @@ iframe {
     height: 300px;
   }
 
-  .project-video-bottom iframe {
+  .project-video-bottom iframe,
+  .project-video-bottom video {
     width: 100%;
     height: auto;
   }
@@ -229,12 +186,12 @@ Designed and developed the game using Unity’s Netcode for GameObjects (NGO) sy
 <strong>Tools:</strong> Unity 6, C#, Unity NGO, Android, iOS, multiplayer systems.
 </p>
 
-<img
-  src="images/image1.png"
-  alt="Personal Project screenshot"
-  class="clickable-image"
-  onclick="openImageModal(this.src, this.alt)"
->
+<div class="project-video-bottom">
+<video controls playsinline preload="metadata">
+  <source src="videos/game1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
 
 </div>
 
@@ -391,34 +348,6 @@ allowfullscreen>
 </div>
 
 </div>
-
-<div id="imageModal" class="image-modal" onclick="closeImageModal()">
-  <span class="close-modal" onclick="closeImageModal()">×</span>
-  <img id="modalImage" src="" alt="">
-</div>
-
-<script>
-function openImageModal(src, alt) {
-  const modal = document.getElementById('imageModal');
-  const modalImage = document.getElementById('modalImage');
-  modalImage.src = src;
-  modalImage.alt = alt || "Expanded image";
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeImageModal() {
-  const modal = document.getElementById('imageModal');
-  modal.classList.remove('active');
-  document.body.style.overflow = '';
-}
-
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    closeImageModal();
-  }
-});
-</script>
 
 </body>
 </html>
