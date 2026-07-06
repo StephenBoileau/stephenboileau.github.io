@@ -1,0 +1,99 @@
+/* Toony star field — shared across all pages */
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh + 900px);
+  pointer-events: none;
+  z-index: -1;
+  background-repeat: repeat;
+}
+
+/* Far layer: smallest, faintest, slowest */
+#stars-far {
+  background-image:
+    radial-gradient(1.3px 1.3px at 25px 35px, rgba(255,255,255,0.50) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 120px 180px, rgba(255,255,255,0.40) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 300px 90px, rgba(255,255,255,0.48) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 410px 240px, rgba(255,255,255,0.38) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 60px 300px, rgba(255,255,255,0.45) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 200px 420px, rgba(255,255,255,0.40) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 350px 380px, rgba(255,255,255,0.50) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 440px 60px, rgba(255,255,255,0.42) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 90px 110px, rgba(255,255,255,0.38) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 260px 250px, rgba(255,255,255,0.48) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 160px 330px, rgba(255,255,255,0.40) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 390px 150px, rgba(255,255,255,0.45) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 310px 440px, rgba(255,255,255,0.38) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 40px 220px, rgba(255,255,255,0.42) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 230px 60px, rgba(255,255,255,0.44) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 145px 260px, rgba(255,255,255,0.40) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 420px 350px, rgba(255,255,255,0.46) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 275px 170px, rgba(255,255,255,0.38) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 75px 430px, rgba(255,255,255,0.44) 50%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 360px 20px, rgba(255,255,255,0.40) 50%, transparent 100%);
+  background-size: 460px 460px;
+}
+
+/* Mid layer */
+#stars-mid {
+  background-image:
+    radial-gradient(1.8px 1.8px at 50px 80px, rgba(255,255,255,0.70) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 180px 300px, rgba(255,255,255,0.60) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 320px 150px, rgba(255,255,255,0.75) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 480px 400px, rgba(255,255,255,0.62) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 120px 500px, rgba(255,255,255,0.58) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 400px 60px, rgba(255,255,255,0.72) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 250px 450px, rgba(255,255,255,0.62) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 540px 250px, rgba(255,255,255,0.68) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 80px 380px, rgba(255,255,255,0.60) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 440px 520px, rgba(255,255,255,0.70) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 290px 540px, rgba(255,255,255,0.64) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 560px 100px, rgba(255,255,255,0.68) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 30px 200px, rgba(255,255,255,0.60) 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 350px 320px, rgba(255,255,255,0.72) 50%, transparent 100%);
+  background-size: 580px 580px;
+}
+
+/* Near layer: biggest, brightest, fastest */
+#stars-near {
+  background-image:
+    radial-gradient(2.5px 2.5px at 100px 150px, rgba(255,255,255,0.95) 50%, transparent 100%),
+    radial-gradient(2.2px 2.2px at 300px 80px, rgba(255,255,255,0.85) 50%, transparent 100%),
+    radial-gradient(2.6px 2.6px at 500px 300px, rgba(255,255,255,1.0) 50%, transparent 100%),
+    radial-gradient(2.2px 2.2px at 200px 550px, rgba(255,255,255,0.82) 50%, transparent 100%),
+    radial-gradient(2.4px 2.4px at 600px 480px, rgba(255,255,255,0.90) 50%, transparent 100%),
+    radial-gradient(2.2px 2.2px at 420px 620px, rgba(255,255,255,0.85) 50%, transparent 100%),
+    radial-gradient(2.6px 2.6px at 650px 120px, rgba(255,255,255,0.95) 50%, transparent 100%),
+    radial-gradient(2.2px 2.2px at 60px 400px, rgba(255,255,255,0.86) 50%, transparent 100%),
+    radial-gradient(2.4px 2.4px at 380px 420px, rgba(255,255,255,0.90) 50%, transparent 100%),
+    radial-gradient(2.2px 2.2px at 550px 650px, rgba(255,255,255,0.84) 50%, transparent 100%),
+    radial-gradient(2.5px 2.5px at 160px 40px, rgba(255,255,255,0.92) 50%, transparent 100%),
+    radial-gradient(2.2px 2.2px at 680px 350px, rgba(255,255,255,0.86) 50%, transparent 100%);
+  background-size: 700px 700px;
+}
+
+/* A few gently twinkling stars */
+#stars-twinkle {
+  background-image:
+    radial-gradient(3px 3px at 150px 200px, rgba(255,255,255,1.0) 50%, transparent 100%),
+    radial-gradient(3px 3px at 600px 700px, rgba(255,255,255,1.0) 50%, transparent 100%),
+    radial-gradient(3px 3px at 750px 350px, rgba(255,255,255,1.0) 50%, transparent 100%),
+    radial-gradient(3px 3px at 320px 520px, rgba(255,255,255,1.0) 50%, transparent 100%),
+    radial-gradient(3px 3px at 850px 80px, rgba(255,255,255,1.0) 50%, transparent 100%);
+  background-size: 900px 900px;
+  animation: twinkle 6s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #stars-twinkle {
+    animation: none;
+  }
+}
