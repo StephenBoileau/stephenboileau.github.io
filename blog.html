@@ -70,6 +70,32 @@ pre {
   color: #ddd;
   font-size: 14px;
 }
+
+.post-date {
+  color: #888;
+  font-size: 14px;
+  margin-top: -6px;
+}
+
+.post-video {
+  margin-top: 20px;
+}
+
+.post-video video {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #333;
+  display: block;
+}
+
+.feature-list {
+  margin: 14px 0;
+  padding-left: 22px;
+}
+
+.feature-list li {
+  margin: 4px 0;
+}
 </style>
 <link rel="stylesheet" href="stars.css" />
 </head>
@@ -92,20 +118,51 @@ pre {
 <p class="subtitle">Notes, experiments, pipeline work, and project breakdowns.</p>
 
 <div class="section">
-  <h2>Under Construction</h2>
+  <h2>Paladin Auto-Rig for Maya: Turn Meshy AI Characters into Game-Ready Rigs in Seconds</h2>
+  <p class="post-date">July 30, 2026</p>
+
+  <div class="badge">Tool coming soon!</div>
+
   <p>
-    This page is still being built. I plan to use it for technical writeups, pipeline notes,
-    real-time animation experiments, Unreal and Unity workflow tips, and project breakdowns.
+    I've been building a tool I'm excited to share: <strong>Paladin Auto-Rig for Maya</strong>.
+    It takes any Meshy AI character on a Mixamo-style skeleton and builds a full production rig
+    automatically &mdash; no manual weighting, no rigging headaches.
   </p>
 
-  <div class="badge">Status: In Progress</div>
+  <p>What it does:</p>
+  <ul class="feature-list">
+    <li>FK/IK arms &amp; legs with stretch</li>
+    <li>Reverse-foot rig</li>
+    <li>Finger + thumb curl controls</li>
+    <li>Forearm twist joints</li>
+    <li>One-click Meshy mocap FBX import</li>
+    <li>Unity-ready FBX export</li>
+    <li>Drag-and-drop installer with a Maya shelf button &mdash; you're rigging in under a minute</li>
+  </ul>
 
-  <div class="ascii-box">
+  <p>
+    It's built for indie devs and solo creators turning AI-generated characters into real,
+    animatable game assets &mdash; fast. Here's a look at it in action:
+  </p>
 
+  <div class="post-video">
+    <video controls playsinline preload="metadata">
+      <source src="videos/paladin_autorig_maya.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 
   <p style="margin-top: 18px;">
-    Check back later.
+    The tool is coming soon, and a Blender version is in the works too. Check back here for the
+    release, tutorial, and showcase.
+  </p>
+</div>
+
+<div class="section">
+  <h2>More Coming Soon</h2>
+  <p>
+    This blog will grow with technical writeups, pipeline notes, real-time animation experiments,
+    Unreal and Unity workflow tips, and project breakdowns.
   </p>
 </div>
 
