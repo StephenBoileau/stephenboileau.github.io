@@ -146,14 +146,43 @@ iframe {
 
 <h1>Stephen Boileau</h1>
 
-<p><strong>Developer / Technical Artist</strong></p>
+<p><strong>Technical Artist &amp; Developer &mdash; Unreal Engine &middot; Unity &middot; Python Tools &middot; Real-Time Pipelines</strong></p>
 
 <p>
-I work in Unity, Unreal Engine, Python, tools development, and real-time interactive systems.
-My work focuses on building reliable pipelines, tools, and animation systems that power interactive experiences and live entertainment.
+Twelve years building the tools, pipelines, and real-time systems that art teams and live shows run on: render automation, operator interfaces, auto-rigging, asset pipelines, and performance optimization in Unreal Engine 5 and Unity. Most of what's below was built for someone else to use &mdash; editors, performers, animators, designers, and clients.
 </p>
 
 <h2>Projects</h2>
+
+<div class="project">
+
+<h3>Paladin Auto-Rig &mdash; One-Click Character Rigging for Maya &amp; Blender (2026)</h3>
+
+<p>
+A one-click auto-rig tool, written in Python, that turns a character mesh on a Mixamo-style skeleton &mdash; including Meshy AI characters &mdash; into a fully rigged, animation-ready, game-exportable asset in under a minute. Built for Maya and ported to Blender.
+</p>
+
+<p>
+Builds a complete production rig automatically: FK/IK arms and legs with stretch, reverse-foot, finger and thumb curl controls, forearm twist joints, and skinning. Imports Mixamo and mocap animation with additive cleanup, and exports game-ready FBX. A drag-and-drop installer creates the Maya shelf button, so there's no script editing to get started. Rigging that took hours by hand now takes seconds.
+</p>
+
+<p>
+<strong>Tools:</strong> Python, PyMEL, Maya, Blender, rigging, skinning, FK/IK, mocap import, FBX export.
+</p>
+
+<p>
+<a href="blog.html">Read the write-up on the blog</a>
+</p>
+
+<div class="project-video-bottom">
+<iframe
+src="https://www.youtube.com/embed/skBs36oo6BI"
+title="Paladin Auto-Rig for Maya"
+allowfullscreen>
+</iframe>
+</div>
+
+</div>
 
 <div class="project">
 
@@ -164,7 +193,11 @@ Technical Artist and Developer at Super 78 on media production for NightFlight E
 </p>
 
 <p>
-Built and supported Unreal Engine rendering pipelines around large-format output at unique, non-standard render dimensions, producing high-resolution media for the attraction's projection systems. Work included Movie Render Queue pipeline setup, automated rendering and video conversion for review, Slack notification workflows, render troubleshooting, material creation and editing, asset optimization and integration, and Perforce-based project maintenance as P4 server administrator supporting multiple teams and contributors.
+Built the Unreal Engine rendering pipeline for large-format output at non-standard render dimensions, producing high-resolution media for the attraction's projection systems. Wrote the Python automation around Movie Render Queue that runs 1&ndash;8 renders a night unattended, converts the raw output to VR-viewable review media, renames it to the project convention, files it in dated folders on the server, and posts Slack alerts on completion and failure &mdash; so the editor and clients could review on a headset before anything was cut into the show.
+</p>
+
+<p>
+Owned environment optimization and performance: LODs and HLODs, draw-call, texture, and material reduction, shadow and lighting optimization, occlusion culling and asset streaming, and GPU/CPU/memory profiling to find and fix bottlenecks. Stood up and administer the production's Perforce server on Linux in Google Cloud for 4&ndash;5 external vendors plus the internal team.
 </p>
 
 <p>
@@ -172,7 +205,7 @@ The attraction is currently in a phased opening, so only officially released pre
 </p>
 
 <p>
-<strong>Tools:</strong> Unreal Engine, Movie Render Queue, large-format rendering, custom render dimensions, Blueprints, Python, material creation and editing, asset optimization, Slack notifications, Perforce, P4 server administration.
+<strong>Tools:</strong> Unreal Engine 5, Movie Render Queue, Python render automation, large-format rendering, custom render dimensions, Blueprints, LODs/HLODs, profiling, material creation and editing, Slack notifications, Perforce, P4 server administration, Linux, Google Cloud.
 </p>
 
 <p>
@@ -198,11 +231,11 @@ Built and supported Unreal Engine rendering workflows for high-resolution output
 </p>
 
 <p>
-Also created and cleaned up MetaHuman animation and mocap data, implemented 360 stereo rendering workflows using the OWL plugin for Unreal to support high-resolution panoramic output for immersive review and presentation needs, and served as P4 server administrator, managing syncing, collaboration, and day-to-day reliability across multiple teams and contributors.
+Directed motion capture of performers &mdash; Rokoko suit and markerless AI video capture &mdash; cleaned it up and retargeted it onto production rigs in Unreal, alongside MetaHuman animation and facial mocap cleanup. Implemented 360 stereo rendering using the OWL plugin for high-resolution panoramic review output, ran the same environment-optimization pass as NightFlight (LODs/HLODs, draw calls, lighting, culling, streaming, profiling), and administered Perforce across multiple teams and contributors.
 </p>
 
 <p>
-<strong>Tools:</strong> Unreal Engine, Movie Render Queue, Blueprints, Python, MetaHuman, facial mocap cleanup, OWL 360 rendering plugin, Slack notifications, material creation and editing, asset optimization, Perforce, P4 server administration.
+<strong>Tools:</strong> Unreal Engine 5, Movie Render Queue, Blueprints, Python, motion capture direction, Rokoko, mocap retargeting, MetaHuman, facial mocap cleanup, OWL 360 rendering plugin, LODs/HLODs, profiling, Slack notifications, Perforce, P4 server administration.
 </p>
 
 <p>
@@ -224,26 +257,26 @@ Also created and cleaned up MetaHuman animation and mocap data, implemented 360 
 <h3>Live Character System – Unreal Engine (2024)</h3>
 
 <p>
-Technical Artist and Developer for a live Unreal Engine character experience used in a major theme park attraction.
+Main programmer and technical artist for a live Unreal Engine 5 character performing daily in a major theme park attraction (client under NDA).
 </p>
 
 <p>
-Built and maintained a real-time animation system supporting hundreds of animation states and transitions. Developed a custom operator-friendly GUI inside Unreal Engine allowing performers and operators to control the character during live performances.
+Built the show-control system in C++ and Blueprint, including custom Blueprint nodes, driving 120+ animation sequences and transitions. Designed the UMG operator interface so performers with no engine experience could run the character live &mdash; 12 performers in shifts at launch, more since. Fed live camera views into Unreal so the voice actors could see the audience they were interacting with, and got three character cameras rendering in real time from a single machine while owning frame rate.
 </p>
 
 <p>
-The system drives a live animated puppet performing daily for park guests and requires high reliability, fast response time, and intuitive controls for performers.
+Running daily since 2024. The client hasn't needed a support call in a long time.
 </p>
 
 <p>
-<strong>Tools:</strong> Unreal Engine, C++, Blueprints, Maya, real-time animation systems.
+<strong>Tools:</strong> Unreal Engine 5, C++, Blueprints, custom Blueprint nodes, UMG, Maya, real-time animation systems, multi-camera real-time rendering.
 </p>
 
 </div>
 
 <div class="project">
 
-<h3>Personal Project</h3>
+<h3>Unity Multiplayer Strategy Game &mdash; Personal Project (Closed Beta)</h3>
 
 <p>
 Passion project built in Unity 6: an online multiplayer turn-based strategy game for Android and iOS, currently in closed beta.
@@ -279,11 +312,15 @@ Worked at Embodied Inc. as a Technical Artist helping bring the Moxie robot to m
 </p>
 
 <p>
-Contributed to character rigging, C# programming, Maya Python tools, asset organization and processing pipelines, and mobile graphics optimization to ensure stable real-time performance on the device.
+Built the audio pipeline tool the design team used to ship sound without an engineering PR: a Python/PyQt GUI where a designer picks approved audio and its target Unity asset bundle, and the tool files it correctly and normalizes loudness against the existing sounds. The same tool scanned the JSON conversation markup to map which audio was used where and built Unity asset bundles from that, so the robot streamed only what an upcoming module needed on its low-end hardware.
 </p>
 
 <p>
-<strong>Tools:</strong> C#, Python, Maya, Unity, mobile graphics optimization.
+Also wrote the Maya Python script that stripped rigs out of hundreds of animation files to keep them small enough for the device, built custom FBX exporters used on every animation export, and contributed character rigging, facial and blend-shape animation prep, C# development, and mobile graphics optimization.
+</p>
+
+<p>
+<strong>Tools:</strong> C#, Python, PyQt, Maya, Unity, asset bundles, JSON, rigging, blendshapes, FBX export automation, mobile graphics optimization.
 </p>
 
 </div>
@@ -311,7 +348,7 @@ Joined the final stage of development on a live Unity-based character experience
 </p>
 
 <p>
-Resolved major performance issues by optimizing heavy assets in Autodesk Maya, profiling and improving Unity code, and stabilizing technical systems to address architectural bugs and evolving client needs. Increased performance from roughly 13 FPS to above 60 FPS without sacrificing visual quality.
+Took over as main programmer on an aging codebase running at roughly 13 FPS. Profiled Unity, rewrote large parts of the C# code, optimized the heavy Maya assets, and absorbed the show rewrites the client requested along the way. Raised performance to above 60 FPS with no visual changes, for a show performing live in front of guests daily.
 </p>
 
 <p>
@@ -341,7 +378,7 @@ Created to-scale theater models in Autodesk Maya and developed precise UV mappin
 </p>
 
 <p>
-I created several theater visualizers during my time at Super 78, though some cannot be shown publicly because the related projects have not yet been built or released.
+I built 3&ndash;4 of these across projects at Super 78. Clients had their own headsets and were trained once; the app auto-loaded whatever media they dropped in, so client reviews ran weekly or biweekly and internal reviews daily. Some can't be shown publicly because the related projects haven't been built or released yet.
 </p>
 
 <p>
