@@ -84,7 +84,8 @@ pre {
   height: 0;
 }
 
-.post-video iframe {
+.post-video iframe,
+.post-video .yt {
   position: absolute;
   top: 0;
   left: 0;
@@ -104,6 +105,8 @@ pre {
 }
 </style>
 <link rel="stylesheet" href="stars.css" />
+<link rel="stylesheet" href="yt.css" />
+<link rel="stylesheet" href="readmore.css" />
 </head>
 
 <body>
@@ -129,6 +132,7 @@ pre {
 
   <div class="badge">Tool coming soon!</div>
 
+  <div class="desc">
   <p>
     I've been building a tool I'm excited to share: <strong>Paladin Auto-Rig for Maya</strong>.
     It takes any Meshy AI character on a Mixamo-style skeleton and builds a full production rig
@@ -150,16 +154,10 @@ pre {
     It's built for indie devs and solo creators turning AI-generated characters into real,
     animatable game assets &mdash; fast. Here's a look at it in action:
   </p>
+  </div>
 
   <div class="post-video">
-    <iframe
-      src="https://www.youtube.com/embed/skBs36oo6BI?autoplay=1"
-      srcdoc="&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%;background:#000}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube.com/embed/skBs36oo6BI?autoplay=1&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/skBs36oo6BI/hqdefault.jpg&#x27; alt=&#x27;Paladin Auto-Rig for Maya&#x27; loading=&#x27;lazy&#x27;&gt;&lt;span&gt;&amp;#x25BA;&lt;/span&gt;&lt;/a&gt;"
-      title="Paladin Auto-Rig for Maya"
-      frameborder="0"
-      loading="lazy"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <a class="yt" href="https://www.youtube.com/watch?v=skBs36oo6BI" data-id="skBs36oo6BI"><span class="yt-title">Paladin Auto-Rig for Maya</span></a>
   </div>
 
   <p style="margin-top: 18px;">
@@ -177,6 +175,8 @@ pre {
 </div>
 
 <script src="stars.js"></script>
+<script src="yt.js"></script>
+<script src="readmore.js"></script>
 
 </body>
 </html>

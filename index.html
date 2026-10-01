@@ -65,7 +65,8 @@ iframe {
   width: 220px;
 }
 
-.project-video iframe {
+.project-video iframe,
+.project-video .yt {
   width: 100%;
   height: 390px;
   border-radius: 6px;
@@ -76,7 +77,8 @@ iframe {
   width: 220px;
 }
 
-.project-video-left iframe {
+.project-video-left iframe,
+.project-video-left .yt {
   width: 100%;
   height: 390px;
   border-radius: 6px;
@@ -90,6 +92,7 @@ iframe {
 }
 
 .project-video-bottom iframe,
+.project-video-bottom .yt,
 .project-video-bottom video {
   width: 100%;
   max-width: 700px;
@@ -97,7 +100,7 @@ iframe {
   border-radius: 6px;
   border: none;
   display: block;
-  background: #000;
+  background-color: #000;
 }
 
 /* Mobile layout fix */
@@ -113,20 +116,26 @@ iframe {
   }
 
   .project-video iframe,
-  .project-video-left iframe {
+  .project-video .yt,
+  .project-video-left iframe,
+  .project-video-left .yt {
     width: 100%;
     height: 300px;
   }
 
   .project-video-bottom iframe,
+  .project-video-bottom .yt,
   .project-video-bottom video {
     width: 100%;
     height: auto;
   }
 }
+
 </style>
 
 <link rel="stylesheet" href="stars.css" />
+<link rel="stylesheet" href="yt.css" />
+<link rel="stylesheet" href="readmore.css" />
 
 </head>
 
@@ -158,6 +167,8 @@ Twelve years building the tools, pipelines, and real-time systems that art teams
 
 <h3>Paladin Auto-Rig &mdash; One-Click Character Rigging for Maya &amp; Blender (2026)</h3>
 
+<div class="desc">
+
 <p>
 A one-click auto-rig tool, written in Python, that turns a character mesh on a Mixamo-style skeleton &mdash; including Meshy AI characters &mdash; into a fully rigged, animation-ready, game-exportable asset in under a minute. Built for Maya and ported to Blender.
 </p>
@@ -174,15 +185,10 @@ Builds a complete production rig automatically: FK/IK arms and legs with stretch
 <a href="blog.html">Read the write-up on the blog</a>
 </p>
 
+</div>
+
 <div class="project-video-bottom">
-<iframe
-src="https://www.youtube.com/embed/skBs36oo6BI?autoplay=1"
-srcdoc="&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%;background:#000}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube.com/embed/skBs36oo6BI?autoplay=1&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/skBs36oo6BI/hqdefault.jpg&#x27; alt=&#x27;Paladin Auto-Rig for Maya&#x27; loading=&#x27;lazy&#x27;&gt;&lt;span&gt;&amp;#x25BA;&lt;/span&gt;&lt;/a&gt;"
-title="Paladin Auto-Rig for Maya"
-loading="lazy"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<a class="yt" href="https://www.youtube.com/watch?v=skBs36oo6BI" data-id="skBs36oo6BI"><span class="yt-title">Paladin Auto-Rig for Maya</span></a>
 </div>
 
 </div>
@@ -190,6 +196,8 @@ allowfullscreen>
 <div class="project">
 
 <h3>NightFlight Expedition – Dollywood (2026) — Coming Soon!</h3>
+
+<div class="desc">
 
 <p>
 Technical Artist and Developer at Super 78 on media production for NightFlight Expedition, Dollywood's landmark indoor attraction — the world's first indoor family hybrid coaster and whitewater river raft ride, blending coaster, raft, and boat sequences with immersive projected media.
@@ -215,15 +223,10 @@ The attraction is currently in a phased opening, so only officially released pre
 <a href="https://www.dollywood.com/hiddenhollowaviation/" target="_blank" rel="noopener noreferrer">Official NightFlight Expedition Page</a>
 </p>
 
+</div>
+
 <div class="project-video-bottom">
-<iframe
-src="https://www.youtube.com/embed/jfr1l9Olggo?autoplay=1"
-srcdoc="&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%;background:#000}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube.com/embed/jfr1l9Olggo?autoplay=1&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/jfr1l9Olggo/hqdefault.jpg&#x27; alt=&#x27;The Making Of NightFlight Expedition – Dollywood&#x27; loading=&#x27;lazy&#x27;&gt;&lt;span&gt;&amp;#x25BA;&lt;/span&gt;&lt;/a&gt;"
-title="The Making Of NightFlight Expedition – Dollywood"
-loading="lazy"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<a class="yt" href="https://www.youtube.com/watch?v=jfr1l9Olggo" data-id="jfr1l9Olggo"><span class="yt-title">The Making Of NightFlight Expedition – Dollywood</span></a>
 </div>
 
 </div>
@@ -231,6 +234,8 @@ allowfullscreen>
 <div class="project">
 
 <h3>Sasquatch Mountain Opening</h3>
+
+<div class="desc">
 
 <p>
 Built and supported Unreal Engine rendering workflows for high-resolution output, review media generation, and content delivery. The work included Movie Render Queue pipeline setup, automated rendering and video conversion for review, Slack notification workflows, asset optimization, material creation and editing, asset integration, Blueprint troubleshooting, and Perforce-based project maintenance.
@@ -249,6 +254,8 @@ Directed motion capture of performers &mdash; Rokoko suit and markerless AI vide
 <a href="https://sasquatchmountain.com/" target="_blank" rel="noopener noreferrer">Visit Sasquatch Mountain</a>
 </p>
 
+</div>
+
 <div class="project-video-bottom">
 <video controls playsinline preload="none" poster="videos/sasqMountain_poster.jpg">
   <source src="videos/260417_sasqMountain.mp4" type="video/mp4">
@@ -261,6 +268,8 @@ Directed motion capture of performers &mdash; Rokoko suit and markerless AI vide
 <div class="project">
 
 <h3>Live Character System – Unreal Engine (2024)</h3>
+
+<div class="desc">
 
 <p>
 Main programmer and technical artist for a live Unreal Engine 5 character performing daily in a major theme park attraction (client under NDA).
@@ -280,9 +289,13 @@ Running daily since 2024. The client hasn't needed a support call in a long time
 
 </div>
 
+</div>
+
 <div class="project">
 
 <h3>Unity Multiplayer Strategy Game &mdash; Personal Project (Closed Beta)</h3>
+
+<div class="desc">
 
 <p>
 Passion project built in Unity 6: an online multiplayer turn-based strategy game for Android and iOS, currently in closed beta.
@@ -295,6 +308,8 @@ Designed and developed the game using Unity’s Netcode for GameObjects (NGO) sy
 <p>
 <strong>Tools:</strong> Unity 6, C#, Unity NGO, Android, iOS, multiplayer systems.
 </p>
+
+</div>
 
 <div class="project-video-bottom">
 <video controls playsinline preload="none" poster="videos/game1_poster.jpg">
@@ -311,7 +326,7 @@ Designed and developed the game using Unity’s Netcode for GameObjects (NGO) sy
 
 <div class="project-flex">
 
-<div class="project-text">
+<div class="project-text desc">
 
 <p>
 Worked at Embodied Inc. as a Technical Artist helping bring the Moxie robot to market, which launched in April 2020. Moxie is a social robot designed to support child development through expressive real-time character animation and interactive experiences.
@@ -333,14 +348,7 @@ Also wrote the Maya Python script that stripped rigs out of hundreds of animatio
 
 <div class="project-video">
 
-<iframe
-src="https://www.youtube.com/embed/Vof8ytP199w?autoplay=1"
-srcdoc="&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%;background:#000}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube.com/embed/Vof8ytP199w?autoplay=1&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/Vof8ytP199w/hqdefault.jpg&#x27; alt=&#x27;Moxie Robot&#x27; loading=&#x27;lazy&#x27;&gt;&lt;span&gt;&amp;#x25BA;&lt;/span&gt;&lt;/a&gt;"
-title="Moxie Robot"
-loading="lazy"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<a class="yt" href="https://www.youtube.com/watch?v=Vof8ytP199w" data-id="Vof8ytP199w"><span class="yt-title">Moxie Robot</span></a>
 
 </div>
 
@@ -351,6 +359,8 @@ allowfullscreen>
 <div class="project">
 
 <h3>Chimelong Spaceship – Cute Animal Party (2022)</h3>
+
+<div class="desc">
 
 <p>
 Joined the final stage of development on a live Unity-based character experience for Chimelong Spaceship, featuring animated characters performing in front of a live audience.
@@ -364,15 +374,10 @@ Took over as main programmer on an aging codebase running at roughly 13 FPS. Pro
 <strong>Tools:</strong> Unity, C#, Autodesk Maya, profiling, performance optimization.
 </p>
 
+</div>
+
 <div class="project-video-bottom">
-<iframe
-src="https://www.youtube.com/embed/M_pg9gNDUyY?autoplay=1"
-srcdoc="&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%;background:#000}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube.com/embed/M_pg9gNDUyY?autoplay=1&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/M_pg9gNDUyY/hqdefault.jpg&#x27; alt=&#x27;Chimelong Cute Animal Party&#x27; loading=&#x27;lazy&#x27;&gt;&lt;span&gt;&amp;#x25BA;&lt;/span&gt;&lt;/a&gt;"
-title="Chimelong Cute Animal Party"
-loading="lazy"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<a class="yt" href="https://www.youtube.com/watch?v=M_pg9gNDUyY" data-id="M_pg9gNDUyY"><span class="yt-title">Chimelong Cute Animal Party</span></a>
 </div>
 
 </div>
@@ -380,6 +385,8 @@ allowfullscreen>
 <div class="project">
 
 <h3>Client Theater Visualizer (2023)</h3>
+
+<div class="desc">
 
 <p>
 Designed and built a Quest-based VR theater visualization tool that allowed clients to preview in-progress media inside accurately scaled virtual theater environments throughout development.
@@ -397,15 +404,10 @@ I built 3&ndash;4 of these across projects at Super 78. Clients had their own he
 <strong>Tools:</strong> Unity, C#, Android, Meta Quest, Autodesk Maya, UV mapping, VR visualization.
 </p>
 
+</div>
+
 <div class="project-video-bottom">
-<iframe
-src="https://www.youtube.com/embed/eAIp_FIKcWA?autoplay=1"
-srcdoc="&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%;background:#000}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube.com/embed/eAIp_FIKcWA?autoplay=1&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/eAIp_FIKcWA/hqdefault.jpg&#x27; alt=&#x27;Client Theater Visualizer&#x27; loading=&#x27;lazy&#x27;&gt;&lt;span&gt;&amp;#x25BA;&lt;/span&gt;&lt;/a&gt;"
-title="Client Theater Visualizer"
-loading="lazy"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<a class="yt" href="https://www.youtube.com/watch?v=eAIp_FIKcWA" data-id="eAIp_FIKcWA"><span class="yt-title">Client Theater Visualizer</span></a>
 </div>
 
 </div>
@@ -418,18 +420,11 @@ allowfullscreen>
 
 <div class="project-video-left">
 
-<iframe
-src="https://www.youtube.com/embed/0B5hiAECvE4?autoplay=1"
-srcdoc="&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%;background:#000}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube.com/embed/0B5hiAECvE4?autoplay=1&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/0B5hiAECvE4/hqdefault.jpg&#x27; alt=&#x27;Princess 360 Dining Experience&#x27; loading=&#x27;lazy&#x27;&gt;&lt;span&gt;&amp;#x25BA;&lt;/span&gt;&lt;/a&gt;"
-title="Princess 360 Dining Experience"
-loading="lazy"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<a class="yt" href="https://www.youtube.com/watch?v=0B5hiAECvE4" data-id="0B5hiAECvE4"><span class="yt-title">Princess 360 Dining Experience</span></a>
 
 </div>
 
-<div class="project-text">
+<div class="project-text desc">
 
 <p>
 Worked on the Princess Cruises 360 dining experience, an immersive theatrical dining environment where projection, sound, and interactive graphics transform the dining table into part of the show.
@@ -453,6 +448,8 @@ Developed TouchDesigner and Python systems using OpenCV to track guest motion an
 
 <h3>Dino on My Desk AR (2016)</h3>
 
+<div class="desc">
+
 <p>
 Sole developer of an educational AR app for kids called <em>Dino on My Desk</em>, released in 2016 for Android and iOS. The experience followed a small dinosaur collecting objects while teaching players about the character and the historical period it came from.
 </p>
@@ -465,20 +462,17 @@ Built the application in Unity using C#, supported Android and iOS development, 
 <strong>Tools:</strong> Unity, C#, Android, iOS, Git, Autodesk Maya, AR development.
 </p>
 
+</div>
+
 <div class="project-video-bottom">
-<iframe
-src="https://www.youtube.com/embed/Lf7zBMjGxUY?autoplay=1"
-srcdoc="&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%;background:#000}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}img{height:100%;object-fit:cover}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=&#x27;https://www.youtube.com/embed/Lf7zBMjGxUY?autoplay=1&#x27;&gt;&lt;img src=&#x27;https://i.ytimg.com/vi/Lf7zBMjGxUY/hqdefault.jpg&#x27; alt=&#x27;Dino on My Desk&#x27; loading=&#x27;lazy&#x27;&gt;&lt;span&gt;&amp;#x25BA;&lt;/span&gt;&lt;/a&gt;"
-title="Dino on My Desk"
-loading="lazy"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<a class="yt" href="https://www.youtube.com/watch?v=Lf7zBMjGxUY" data-id="Lf7zBMjGxUY"><span class="yt-title">Dino on My Desk</span></a>
 </div>
 
 </div>
 
 <script src="stars.js"></script>
+<script src="yt.js"></script>
+<script src="readmore.js"></script>
 
 </body>
 </html>

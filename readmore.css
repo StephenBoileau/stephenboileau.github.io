@@ -1,0 +1,77 @@
+/* Collapsible descriptions — mobile only, shared across pages (see readmore.js) */
+
+.read-more {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .desc.collapsible {
+    position: relative;
+    overflow: hidden;
+    margin-top: 1em;
+    max-height: 4.8em; /* three lines; the last two fade out */
+    transition: max-height 0.4s ease;
+  }
+
+  .desc.collapsible > p:first-child {
+    margin-top: 0;
+  }
+
+  .desc.collapsible::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3.6em;
+    background: linear-gradient(rgba(26, 26, 26, 0), #1a1a1a 90%);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .desc.collapsible.open::after {
+    opacity: 0;
+  }
+
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    background: none;
+    border: 0;
+    color: #7cc7ff;
+    font: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .read-more::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease, margin-top 0.3s ease;
+  }
+
+  .read-more[aria-expanded="true"]::after {
+    margin-top: 3px;
+    transform: rotate(-135deg);
+  }
+
+  .project-flex .read-more {
+    margin-top: -14px;
+  }
+}
+
+@media (max-width: 700px) and (prefers-reduced-motion: reduce) {
+  .desc.collapsible,
+  .desc.collapsible::after,
+  .read-more::after {
+    transition: none;
+  }
+}

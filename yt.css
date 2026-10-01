@@ -1,0 +1,45 @@
+/* Click-to-load YouTube embeds — shared across pages (see yt.js) */
+
+.yt {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: #000 center / cover no-repeat;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.yt-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 14px 28px;
+  font: 15px/1.3 Arial, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+}
+
+.yt-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+  transition: transform 0.15s ease;
+}
+
+.yt:hover .yt-play,
+.yt:focus-visible .yt-play {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.yt-loading .yt-play {
+  opacity: 0.6;
+}
