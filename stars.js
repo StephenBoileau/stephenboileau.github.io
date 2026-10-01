@@ -7,11 +7,14 @@
     { el: document.getElementById('stars-twinkle'), speed: 0.40, tile: 900 }
   ];
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  // Touch devices scroll on the compositor thread, so JS-driven parallax
+  // lags and stutters there. Keep the star field static on phones/tablets.
+  var touch = window.matchMedia('(hover: none) and (pointer: coarse)');
   var ticking = false;
 
   function update() {
     ticking = false;
-    if (reduced.matches) return;
+    if (reduced.matches || touch.matches) return;
     var y = window.scrollY || window.pageYOffset;
     for (var i = 0; i < layers.length; i++) {
       var offset = -((y * layers[i].speed) % layers[i].tile);

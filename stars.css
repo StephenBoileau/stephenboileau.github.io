@@ -9,6 +9,19 @@
   pointer-events: none;
   z-index: -1;
   background-repeat: repeat;
+  will-change: transform;
+  contain: strict;
+}
+
+/* Touch devices: no parallax (see stars.js), so layers only need to cover
+   the screen. Keeps GPU memory low and avoids resizing when the URL bar
+   shows/hides. */
+@media (hover: none) and (pointer: coarse) {
+  .stars {
+    height: 100vh;
+    height: 100lvh;
+    will-change: auto;
+  }
 }
 
 /* Far layer: smallest, faintest, slowest */
