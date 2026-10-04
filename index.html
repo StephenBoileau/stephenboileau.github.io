@@ -1,243 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Stephen Boileau Portfolio</title>
-
-<style>
-body {
-  font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-  line-height: 1.6;
-  background: #111;
-  color: #eee;
-}
-
-h1, h2 {
-  color: #fff;
-}
-
-a {
-  color: #7cc7ff;
-}
-
-nav {
-  margin-bottom: 30px;
-  font-size: 18px;
-}
-
-.project {
-  border: 1px solid #333;
-  padding: 16px;
-  margin: 16px 0;
-  border-radius: 8px;
-  background: #1a1a1a;
-}
-
-.project img {
-  margin-top: 12px;
-  border-radius: 6px;
-  width: 100%;
-  max-width: 700px;
-  display: block;
-}
-
-iframe {
-  max-width: 100%;
-}
-
-/* Project layout */
-
-.project-flex {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.project-text {
-  flex: 1;
-}
-
-.project-video {
-  width: 220px;
-}
-
-.project-video iframe,
-.project-video .yt {
-  width: 100%;
-  height: 390px;
-  border-radius: 6px;
-  border: none;
-}
-
-.project-video-left {
-  width: 220px;
-}
-
-.project-video-left iframe,
-.project-video-left .yt {
-  width: 100%;
-  height: 390px;
-  border-radius: 6px;
-  border: none;
-}
-
-/* Full-width standard video layout */
-
-.project-video-bottom {
-  margin-top: 16px;
-}
-
-.project-video-bottom iframe,
-.project-video-bottom .yt,
-.project-video-bottom video {
-  width: 100%;
-  max-width: 700px;
-  aspect-ratio: 16 / 9;
-  border-radius: 6px;
-  border: none;
-  display: block;
-  background-color: #000;
-}
-
-/* Mobile layout fix */
-
-@media (max-width: 700px) {
-  .project-flex {
-    flex-direction: column;
-  }
-
-  .project-video,
-  .project-video-left {
-    width: 100%;
-  }
-
-  .project-video iframe,
-  .project-video .yt,
-  .project-video-left iframe,
-  .project-video-left .yt {
-    width: 100%;
-    height: 300px;
-  }
-
-  .project-video-bottom iframe,
-  .project-video-bottom .yt,
-  .project-video-bottom video {
-    width: 100%;
-    height: auto;
-  }
-}
-
-</style>
-
-<link rel="stylesheet" href="stars.css" />
-<link rel="stylesheet" href="yt.css" />
-<link rel="stylesheet" href="readmore.css" />
-
-</head>
-
-<body>
-
-<div class="stars" id="stars-far"></div>
-<div class="stars" id="stars-mid"></div>
-<div class="stars" id="stars-near"></div>
-<div class="stars" id="stars-twinkle"></div>
-
-<nav>
-<a href="/">Home</a> |
-<a href="resume.html">Resume</a> |
-<a href="contact.html">Contact</a> |
-<a href="blog.html">Blog</a>
-</nav>
-
-<h1>Stephen Boileau</h1>
-
-<p><strong>Technical Artist &amp; Developer &mdash; Unreal Engine &middot; Unity &middot; Python Tools &middot; Real-Time Pipelines</strong></p>
-
-<p>
-Twelve years building the tools, pipelines, and real-time systems that art teams and live shows run on: render automation, operator interfaces, auto-rigging, asset pipelines, and performance optimization in Unreal Engine 5 and Unity. Most of what's below was built for someone else to use &mdash; editors, performers, animators, designers, and clients.
-</p>
-
-<h2>Projects</h2>
-
-<div class="project">
-
-<h3>Paladin Auto-Rig &mdash; One-Click Character Rigging for Maya &amp; Blender (2026)</h3>
-
-<div class="desc">
-
-<p>
-A one-click auto-rig tool, written in Python, that turns a character mesh on a Mixamo-style skeleton &mdash; including Meshy AI characters &mdash; into a fully rigged, animation-ready, game-exportable asset in under a minute. Built for Maya and ported to Blender.
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Technical Artist & Developer | Stephen Boileau</title><meta name="description" content="Artist tools, production pipelines, and real-time systems by Stephen Boileau. Explore Unity optimization, Unreal show control, and Python tooling."><meta property="og:title" content="Technical Artist & Developer | Stephen Boileau"><meta property="og:description" content="Artist tools, production pipelines, and real-time systems by Stephen Boileau. Explore Unity optimization, Unreal show control, and Python tooling."><meta property="og:image" content="https://stephenboileau.github.io/assets/skBs36oo6BI.jpg"><meta name="color-scheme" content="dark"><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html" aria-label="Stephen Boileau home">SB<span>STEPHEN BOILEAU</span></a><nav aria-label="Main navigation"><a href="index.html#work">Work</a><a href="resume.html">Resume</a><a href="index.html#contact">Contact</a></nav></header><main id="main"><section class="hero"><div class="eyebrow">TOOLS FOR ARTISTS. SYSTEMS FOR PRODUCTION.</div><h1>Stephen Boileau</h1><h2>Technical Artist &amp; Developer <span class="headline-divider">|</span><br>Tools, Pipelines &amp; Real-Time Optimization</h2><p class="intro">I build software that artists, performers, and production teams use. Across 12 years in themed entertainment, robotics, and VR, my work spans Python tools, Unreal show control, and Unity performance optimization.</p><div class="actions"><a class="button primary" href="StephenBoileau_Resume.pdf" download>Download Resume <span aria-hidden="true">↓</span></a><a class="button email-address" href="mailto:stephen.a.boileau@gmail.com">stephen.a.boileau@gmail.com</a><a class="text-link" href="https://www.linkedin.com/in/stephen-boileau-a63ba750" target="_blank" rel="noopener">LinkedIn ↗</a></div><p class="location">Los Angeles, CA <span>·</span> Unreal Engine / Unity / Python / C++ / C#</p></section><section class="outcomes" aria-label="Selected project outcomes"><a href="chimelong.html"><span class="eyebrow">CHIMELONG / UNITY PERFORMANCE</span><strong>~13 <span>→</span> 60+ <small>FPS</small></strong><p>Live show optimization, preserving visual quality.</p></a><a href="live-character.html"><span class="eyebrow">LIVE UNREAL CHARACTER</span><strong>120+ <small>sequences</small></strong><p>Operator interface used by 12+ performers.</p></a><a href="render-automation.html"><span class="eyebrow">RENDER AUTOMATION / NIGHTFLIGHT</span><strong>1–8 <small>renders / night</small></strong><p>Unattended rendering through VR review output.</p></a></section><section id="work" class="work"><div class="section-heading"><div><span class="eyebrow">01 / SELECTED WORK</span><h2>Built to be used.</h2></div><p>Four projects in tools, pipelines,<br>and real-time production.</p></div><div class="featured-grid"><article class="project-card"><div class="card-visual"><div class="media"><button class="video-trigger" data-video="skBs36oo6BI" data-title="Paladin Auto-Rig" aria-label="Play Paladin Auto-Rig video (loads YouTube)"><img src="assets/skBs36oo6BI.jpg" alt="Video poster for Paladin Auto-Rig" loading="lazy" width="480" height="360"><span class="play" aria-hidden="true">▶</span><span class="video-label">TOOL DEMO · PLAY VIDEO</span></button></div><a class="media-fallback" href="https://www.youtube.com/watch?v=skBs36oo6BI">Watch on YouTube ↗</a></div><div class="card-copy"><div class="eyebrow">01 / PYTHON TOOLING / 2026</div><h3>Paladin Auto-Rig</h3><p class="role">Tool design & development</p><p class="status">Tool project · Maya demo available</p><details class="card-details" open><summary>Problem &amp; contribution</summary><div><p>Manual character rigging slows the path from a skeleton to an animation-ready asset.</p><p>Built a Python tool with FK/IK controls, animation import, a drag-and-drop installer, and game-ready FBX export.</p></div></details><p class="result">Reported rig creation in under a minute for Mixamo-style skeletons.</p><a class="breakdown-link" href="paladin.html">View technical breakdown <span aria-hidden="true">↗</span></a></div></article><article class="project-card"><div class="card-visual"><div class="media"><button class="video-trigger" data-video="M_pg9gNDUyY" data-title="Chimelong performance optimization" aria-label="Play Chimelong performance optimization video (loads YouTube)"><img src="assets/M_pg9gNDUyY.jpg" alt="Video poster for Chimelong performance optimization" loading="lazy" width="480" height="360"><span class="play" aria-hidden="true">▶</span><span class="video-label">PRODUCTION CONTEXT · PLAY VIDEO</span></button></div><a class="media-fallback" href="https://www.youtube.com/watch?v=M_pg9gNDUyY">Watch on YouTube ↗</a></div><div class="card-copy"><div class="eyebrow">02 / UNITY / LIVE ENTERTAINMENT / 2022</div><h3>Chimelong performance optimization</h3><p class="role">Main programmer & asset optimization</p><p class="status">Professional work · Super 78 · Live show</p><details class="card-details" open><summary>Problem &amp; contribution</summary><div><p>A live character experience was running at roughly 13 FPS late in development.</p><p>Profiled Unity, refactored large parts of the C# code, optimized Maya assets, and implemented requested show revisions.</p></div></details><p class="result">Roughly 13 FPS → over 60 FPS, preserving the show’s visual quality.</p><a class="breakdown-link" href="chimelong.html">View technical breakdown <span aria-hidden="true">↗</span></a></div></article><article class="project-card"><div class="card-visual"><div class="private-visual" role="note" aria-label="No public client imagery available"><span class="eyebrow">CLIENT UNDER NDA</span><strong>Live performance.<br>Purpose-built controls.</strong><div class="private-stats"><span><b>120+</b> sequences</span><span><b>3</b> camera outputs</span></div><small>Project summary · No public client imagery</small></div></div><div class="card-copy"><div class="eyebrow">03 / UNREAL ENGINE / SHOW CONTROL / 2024</div><h3>Live Unreal character system</h3><p class="role">Main programmer & technical artist</p><p class="status">Professional work · Super 78 · Client under NDA</p><details class="card-details" open><summary>Problem &amp; contribution</summary><div><p>Performers needed to control a live character without using the Unreal editor.</p><p>Built C++/Blueprint show control, a UMG operator interface, live camera feeds, and three real-time character outputs.</p></div></details><p class="result">120+ animation sequences; interface used by 12+ performers.</p><a class="breakdown-link" href="live-character.html">View technical breakdown <span aria-hidden="true">↗</span></a></div></article><article class="project-card"><div class="card-visual"><div class="media"><button class="video-trigger" data-video="jfr1l9Olggo" data-title="Render automation / NightFlight" aria-label="Play Render automation / NightFlight video (loads YouTube)"><img src="assets/jfr1l9Olggo.jpg" alt="Video poster for Render automation / NightFlight" loading="lazy" width="480" height="360"><span class="play" aria-hidden="true">▶</span><span class="video-label">PRODUCTION CONTEXT · PLAY VIDEO</span></button></div><a class="media-fallback" href="https://www.youtube.com/watch?v=jfr1l9Olggo">Watch on YouTube ↗</a></div><div class="card-copy"><div class="eyebrow">04 / UNREAL ENGINE / PRODUCTION PIPELINE / 2026</div><h3>Render automation / NightFlight</h3><p class="role">Technical artist & pipeline developer</p><p class="status">Professional work · Super 78</p><details class="card-details" open><summary>Problem &amp; contribution</summary><div><p>Large-format production needed render output ready for VR review and editorial.</p><p>Built Python automation around Movie Render Queue, review conversion, naming, filing, and Slack completion/failure alerts.</p></div></details><p class="result">1–8 unattended nightly renders, with VR review media prepared for the team.</p><a class="breakdown-link" href="render-automation.html">View technical breakdown <span aria-hidden="true">↗</span></a></div></article></div><p class="evidence-note">Outcomes are reported in my published portfolio and resume. Production footage provides context; technical evidence is described in each breakdown.</p></section><section class="supporting" id="supporting"><div class="section-heading"><div><span class="eyebrow">02 / MORE WORK</span><h2>Across platforms and productions.</h2></div></div><div class="support-grid"><article class="support-card"><div class="media support-media"><button type="button" class="video-trigger" data-video="Vof8ytP199w" data-title="Moxie robot" aria-label="Play Moxie robot video in place"><img src="assets/Vof8ytP199w.jpg" alt="Published video poster for Moxie robot" loading="lazy" width="480" height="270"><span class="play" aria-hidden="true">▶</span></button></div><h3>Moxie robot</h3><p class="status">Professional work · Embodied · 2020</p><p>Built designer-facing Python/PyQt audio and asset-bundle tools; automated Maya animation preparation and standardized FBX export. Helped ship the real-time character on embedded hardware.</p><details class="support-details"><summary>More info</summary><div class="original-description"><p>
+Worked at Embodied Inc. as a Technical Artist helping bring the Moxie robot to market, which launched in April 2020. Moxie is a social robot designed to support child development through expressive real-time character animation and interactive experiences.
 </p>
 
 <p>
-Builds a complete production rig automatically: FK/IK arms and legs with stretch, reverse-foot, finger and thumb curl controls, forearm twist joints, and skinning. Imports Mixamo and mocap animation with additive cleanup, and exports game-ready FBX. A drag-and-drop installer creates the Maya shelf button, so there's no script editing to get started. Rigging that took hours by hand now takes seconds.
+Built the audio pipeline tool the design team used to ship sound without an engineering PR: a Python/PyQt GUI where a designer picks approved audio and its target Unity asset bundle, and the tool files it correctly and normalizes loudness against the existing sounds. The same tool scanned the JSON conversation markup to map which audio was used where and built Unity asset bundles from that, so the robot streamed only what an upcoming module needed on its low-end hardware.
 </p>
 
 <p>
-<strong>Tools:</strong> Python, PyMEL, Maya, Blender, rigging, skinning, FK/IK, mocap import, FBX export.
+Also wrote the Maya Python script that stripped rigs out of hundreds of animation files to keep them small enough for the device, built custom FBX exporters used on every animation export, and contributed character rigging, facial and blend-shape animation prep, C# development, and mobile graphics optimization.
 </p>
 
 <p>
-<a href="blog.html">Read the write-up on the blog</a>
-</p>
-
-</div>
-
-<div class="project-video-bottom">
-<a class="yt" href="https://www.youtube.com/watch?v=skBs36oo6BI" data-id="skBs36oo6BI"><span class="yt-title">Paladin Auto-Rig for Maya</span></a>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>NightFlight Expedition – Dollywood (2026) — Coming Soon!</h3>
-
-<div class="desc">
-
-<p>
-Technical Artist and Developer at Super 78 on media production for NightFlight Expedition, Dollywood's landmark indoor attraction — the world's first indoor family hybrid coaster and whitewater river raft ride, blending coaster, raft, and boat sequences with immersive projected media.
+<strong>Tools:</strong> C#, Python, PyQt, Maya, Unity, asset bundles, JSON, rigging, blendshapes, FBX export automation, mobile graphics optimization.
+</p></div><a class="text-link video-source" href="https://www.youtube.com/watch?v=Vof8ytP199w">Video source</a></details></article><article class="support-card"><div class="media support-media"><button type="button" class="video-trigger" data-video="eAIp_FIKcWA" data-title="Quest Theater Visualizer" aria-label="Play Quest Theater Visualizer video in place"><img src="assets/eAIp_FIKcWA.jpg" alt="Published video poster for Quest Theater Visualizer" loading="lazy" width="480" height="270"><span class="play" aria-hidden="true">▶</span></button></div><h3>Quest Theater Visualizer</h3><p class="status">Professional work · Super 78 · 2023</p><p>Built to-scale Maya theaters and a Unity/Quest media-review app. Clients reviewed in-progress content on curved projection surfaces after initial training.</p><details class="support-details"><summary>More info</summary><div class="original-description"><p>
+Designed and built a Quest-based VR theater visualization tool that allowed clients to preview in-progress media inside accurately scaled virtual theater environments throughout development.
 </p>
 
 <p>
-Built the Unreal Engine rendering pipeline for large-format output at non-standard render dimensions, producing high-resolution media for the attraction's projection systems. Wrote the Python automation around Movie Render Queue that runs 1&ndash;8 renders a night unattended, converts the raw output to VR-viewable review media, renames it to the project convention, files it in dated folders on the server, and posts Slack alerts on completion and failure &mdash; so the editor and clients could review on a headset before anything was cut into the show.
+Created to-scale theater models in Autodesk Maya and developed precise UV mapping for complex curved projection surfaces. Built an Android/Quest application with a simple file-picker workflow so clients could load media directly onto the headset and review how content would appear on the intended screens without needing technical support.
 </p>
 
 <p>
-Owned environment optimization and performance: LODs and HLODs, draw-call, texture, and material reduction, shadow and lighting optimization, occlusion culling and asset streaming, and GPU/CPU/memory profiling to find and fix bottlenecks. Stood up and administer the production's Perforce server on Linux in Google Cloud for 4&ndash;5 external vendors plus the internal team.
+I built 3&ndash;4 of these across projects at Super 78. Clients had their own headsets and were trained once; the app auto-loaded whatever media they dropped in, so client reviews ran weekly or biweekly and internal reviews daily. Some can't be shown publicly because the related projects haven't been built or released yet.
 </p>
 
 <p>
-The attraction is currently in a phased opening, so only officially released preview media is shown here. Super 78 is featured in Dollywood's official making-of series below.
+<strong>Tools:</strong> Unity, C#, Android, Meta Quest, Autodesk Maya, UV mapping, VR visualization.
+</p></div><a class="text-link video-source" href="https://www.youtube.com/watch?v=eAIp_FIKcWA">Video source</a></details></article><article class="support-card"><div class="media support-media"><button type="button" class="video-trigger" data-src="videos/game1.mp4" data-title="Multiplayer strategy game" aria-label="Play Multiplayer strategy game video in place"><img src="assets/game1_poster.jpg" alt="Published video poster for Multiplayer strategy game" loading="lazy" width="480" height="270"><span class="play" aria-hidden="true">▶</span></button></div><h3>Multiplayer strategy game</h3><p class="status">Personal project · Closed beta</p><p>Solo-built Unity 6 turn-based game for Android and iOS using Netcode for GameObjects. Focused on multiplayer systems, mobile UI, and low-end device performance.</p><details class="support-details"><summary>More info</summary><div class="original-description"><p>
+Passion project built in Unity 6: an online multiplayer turn-based strategy game for Android and iOS, currently in closed beta.
 </p>
 
 <p>
-<strong>Tools:</strong> Unreal Engine 5, Movie Render Queue, Python render automation, large-format rendering, custom render dimensions, Blueprints, LODs/HLODs, profiling, material creation and editing, Slack notifications, Perforce, P4 server administration, Linux, Google Cloud.
+Designed and developed the game using Unity’s Netcode for GameObjects (NGO) system, with a focus on multiplayer gameplay systems, mobile support, and production-ready iteration as the project continues to evolve.
 </p>
 
 <p>
-<a href="https://www.dollywood.com/hiddenhollowaviation/" target="_blank" rel="noopener noreferrer">Official NightFlight Expedition Page</a>
-</p>
-
-</div>
-
-<div class="project-video-bottom">
-<a class="yt" href="https://www.youtube.com/watch?v=jfr1l9Olggo" data-id="jfr1l9Olggo"><span class="yt-title">The Making Of NightFlight Expedition – Dollywood</span></a>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Sasquatch Mountain Opening</h3>
-
-<div class="desc">
-
-<p>
+<strong>Tools:</strong> Unity 6, C#, Unity NGO, Android, iOS, multiplayer systems.
+</p></div><a class="text-link video-source" href="videos/game1.mp4">Video source</a></details></article><article class="support-card"><div class="media support-media"><button type="button" class="video-trigger" data-src="videos/260417_sasqMountain.mp4" data-title="Sasquatch Mountain" aria-label="Play Sasquatch Mountain video in place"><img src="assets/sasqMountain_poster.jpg" alt="Published video poster for Sasquatch Mountain" loading="lazy" width="480" height="270"><span class="play" aria-hidden="true">▶</span></button></div><h3>Sasquatch Mountain</h3><p class="status">Professional work · Super 78</p><p>Rendering and review workflows, environment optimization, motion capture direction and retargeting, and Perforce support.</p><details class="support-details"><summary>More info</summary><div class="original-description"><p>
 Built and supported Unreal Engine rendering workflows for high-resolution output, review media generation, and content delivery. The work included Movie Render Queue pipeline setup, automated rendering and video conversion for review, Slack notification workflows, asset optimization, material creation and editing, asset integration, Blueprint troubleshooting, and Perforce-based project maintenance.
 </p>
 
@@ -252,181 +51,7 @@ Directed motion capture of performers &mdash; Rokoko suit and markerless AI vide
 <p>
 <a href="https://www.fox13seattle.com/video/fmc-7x2ylj7xngbgkbw3" target="_blank" rel="noopener noreferrer">View Fox 13 Project Clip</a><br>
 <a href="https://sasquatchmountain.com/" target="_blank" rel="noopener noreferrer">Visit Sasquatch Mountain</a>
-</p>
-
-</div>
-
-<div class="project-video-bottom">
-<video controls playsinline preload="none" poster="videos/sasqMountain_poster.jpg">
-  <source src="videos/260417_sasqMountain.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Live Character System – Unreal Engine (2024)</h3>
-
-<div class="desc">
-
-<p>
-Main programmer and technical artist for a live Unreal Engine 5 character performing daily in a major theme park attraction (client under NDA).
-</p>
-
-<p>
-Built the show-control system in C++ and Blueprint, including custom Blueprint nodes, driving 120+ animation sequences and transitions. Designed the UMG operator interface so performers with no engine experience could run the character live &mdash; 12 performers in shifts at launch, more since. Fed live camera views into Unreal so the voice actors could see the audience they were interacting with, and got three character cameras rendering in real time from a single machine while owning frame rate.
-</p>
-
-<p>
-Running daily since 2024. The client hasn't needed a support call in a long time.
-</p>
-
-<p>
-<strong>Tools:</strong> Unreal Engine 5, C++, Blueprints, custom Blueprint nodes, UMG, Maya, real-time animation systems, multi-camera real-time rendering.
-</p>
-
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Unity Multiplayer Strategy Game &mdash; Personal Project (Closed Beta)</h3>
-
-<div class="desc">
-
-<p>
-Passion project built in Unity 6: an online multiplayer turn-based strategy game for Android and iOS, currently in closed beta.
-</p>
-
-<p>
-Designed and developed the game using Unity’s Netcode for GameObjects (NGO) system, with a focus on multiplayer gameplay systems, mobile support, and production-ready iteration as the project continues to evolve.
-</p>
-
-<p>
-<strong>Tools:</strong> Unity 6, C#, Unity NGO, Android, iOS, multiplayer systems.
-</p>
-
-</div>
-
-<div class="project-video-bottom">
-<video controls playsinline preload="none" poster="videos/game1_poster.jpg">
-  <source src="videos/game1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Moxie Robot – Real-Time Character System (2020)</h3>
-
-<div class="project-flex">
-
-<div class="project-text desc">
-
-<p>
-Worked at Embodied Inc. as a Technical Artist helping bring the Moxie robot to market, which launched in April 2020. Moxie is a social robot designed to support child development through expressive real-time character animation and interactive experiences.
-</p>
-
-<p>
-Built the audio pipeline tool the design team used to ship sound without an engineering PR: a Python/PyQt GUI where a designer picks approved audio and its target Unity asset bundle, and the tool files it correctly and normalizes loudness against the existing sounds. The same tool scanned the JSON conversation markup to map which audio was used where and built Unity asset bundles from that, so the robot streamed only what an upcoming module needed on its low-end hardware.
-</p>
-
-<p>
-Also wrote the Maya Python script that stripped rigs out of hundreds of animation files to keep them small enough for the device, built custom FBX exporters used on every animation export, and contributed character rigging, facial and blend-shape animation prep, C# development, and mobile graphics optimization.
-</p>
-
-<p>
-<strong>Tools:</strong> C#, Python, PyQt, Maya, Unity, asset bundles, JSON, rigging, blendshapes, FBX export automation, mobile graphics optimization.
-</p>
-
-</div>
-
-<div class="project-video">
-
-<a class="yt" href="https://www.youtube.com/watch?v=Vof8ytP199w" data-id="Vof8ytP199w"><span class="yt-title">Moxie Robot</span></a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Chimelong Spaceship – Cute Animal Party (2022)</h3>
-
-<div class="desc">
-
-<p>
-Joined the final stage of development on a live Unity-based character experience for Chimelong Spaceship, featuring animated characters performing in front of a live audience.
-</p>
-
-<p>
-Took over as main programmer on an aging codebase running at roughly 13 FPS. Profiled Unity, rewrote large parts of the C# code, optimized the heavy Maya assets, and absorbed the show rewrites the client requested along the way. Raised performance to above 60 FPS with no visual changes, for a show performing live in front of guests daily.
-</p>
-
-<p>
-<strong>Tools:</strong> Unity, C#, Autodesk Maya, profiling, performance optimization.
-</p>
-
-</div>
-
-<div class="project-video-bottom">
-<a class="yt" href="https://www.youtube.com/watch?v=M_pg9gNDUyY" data-id="M_pg9gNDUyY"><span class="yt-title">Chimelong Cute Animal Party</span></a>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Client Theater Visualizer (2023)</h3>
-
-<div class="desc">
-
-<p>
-Designed and built a Quest-based VR theater visualization tool that allowed clients to preview in-progress media inside accurately scaled virtual theater environments throughout development.
-</p>
-
-<p>
-Created to-scale theater models in Autodesk Maya and developed precise UV mapping for complex curved projection surfaces. Built an Android/Quest application with a simple file-picker workflow so clients could load media directly onto the headset and review how content would appear on the intended screens without needing technical support.
-</p>
-
-<p>
-I built 3&ndash;4 of these across projects at Super 78. Clients had their own headsets and were trained once; the app auto-loaded whatever media they dropped in, so client reviews ran weekly or biweekly and internal reviews daily. Some can't be shown publicly because the related projects haven't been built or released yet.
-</p>
-
-<p>
-<strong>Tools:</strong> Unity, C#, Android, Meta Quest, Autodesk Maya, UV mapping, VR visualization.
-</p>
-
-</div>
-
-<div class="project-video-bottom">
-<a class="yt" href="https://www.youtube.com/watch?v=eAIp_FIKcWA" data-id="eAIp_FIKcWA"><span class="yt-title">Client Theater Visualizer</span></a>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Princess Cruises – 360 Dining Experience (2023)</h3>
-
-<div class="project-flex">
-
-<div class="project-video-left">
-
-<a class="yt" href="https://www.youtube.com/watch?v=0B5hiAECvE4" data-id="0B5hiAECvE4"><span class="yt-title">Princess 360 Dining Experience</span></a>
-
-</div>
-
-<div class="project-text desc">
-
-<p>
+</p></div><a class="text-link video-source" href="videos/260417_sasqMountain.mp4">Video source</a></details></article><article class="support-card"><div class="media support-media"><button type="button" class="video-trigger" data-video="0B5hiAECvE4" data-title="Princess Cruises 360" aria-label="Play Princess Cruises 360 video in place"><img src="assets/0B5hiAECvE4.jpg" alt="Published video poster for Princess Cruises 360" loading="lazy" width="480" height="270"><span class="play" aria-hidden="true">▶</span></button></div><h3>Princess Cruises 360</h3><p class="status">Professional work · 2023</p><p>Developed TouchDesigner/Python systems using OpenCV to track motion and gestures for responsive graphics in an immersive dining experience.</p><details class="support-details"><summary>More info</summary><div class="original-description"><p>
 Worked on the Princess Cruises 360 dining experience, an immersive theatrical dining environment where projection, sound, and interactive graphics transform the dining table into part of the show.
 </p>
 
@@ -436,21 +61,7 @@ Developed TouchDesigner and Python systems using OpenCV to track guest motion an
 
 <p>
 <strong>Tools:</strong> TouchDesigner, Python, OpenCV, real-time interactive graphics.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Dino on My Desk AR (2016)</h3>
-
-<div class="desc">
-
-<p>
+</p></div><a class="text-link video-source" href="https://www.youtube.com/watch?v=0B5hiAECvE4">Video source</a></details></article><article class="support-card"><div class="media support-media"><button type="button" class="video-trigger" data-video="Lf7zBMjGxUY" data-title="Dino on My Desk" aria-label="Play Dino on My Desk video in place"><img src="assets/Lf7zBMjGxUY.jpg" alt="Published video poster for Dino on My Desk" loading="lazy" width="480" height="270"><span class="play" aria-hidden="true">▶</span></button></div><h3>Dino on My Desk</h3><p class="status">Professional work · DeepBlue Worlds · Released 2016</p><p>Sole developer of an educational Unity/C# AR app released for Android and iOS. Built around Maya-based assets.</p><details class="support-details"><summary>More info</summary><div class="original-description"><p>
 Sole developer of an educational AR app for kids called <em>Dino on My Desk</em>, released in 2016 for Android and iOS. The experience followed a small dinosaur collecting objects while teaching players about the character and the historical period it came from.
 </p>
 
@@ -460,19 +71,4 @@ Built the application in Unity using C#, supported Android and iOS development, 
 
 <p>
 <strong>Tools:</strong> Unity, C#, Android, iOS, Git, Autodesk Maya, AR development.
-</p>
-
-</div>
-
-<div class="project-video-bottom">
-<a class="yt" href="https://www.youtube.com/watch?v=Lf7zBMjGxUY" data-id="Lf7zBMjGxUY"><span class="yt-title">Dino on My Desk</span></a>
-</div>
-
-</div>
-
-<script src="stars.js"></script>
-<script src="yt.js"></script>
-<script src="readmore.js"></script>
-
-</body>
-</html>
+</p></div><a class="text-link video-source" href="https://www.youtube.com/watch?v=Lf7zBMjGxUY">Video source</a></details></article></div></section><section class="contact" id="contact"><div><span class="eyebrow">03 / CONTACT</span><h2>Contact</h2><p>Technical art, tools and pipelines, and real-time development.</p></div><div><div class="actions"><a class="button primary" href="StephenBoileau_Resume.pdf" download>Download Resume <span aria-hidden="true">↓</span></a><a class="button email-address" href="mailto:stephen.a.boileau@gmail.com">stephen.a.boileau@gmail.com</a><a class="text-link" href="https://www.linkedin.com/in/stephen-boileau-a63ba750" target="_blank" rel="noopener">LinkedIn ↗</a></div><a class="text-link" href="https://github.com/stephenboileau" target="_blank" rel="noopener">GitHub ↗</a></div></section></main><footer><span>Stephen Boileau · Los Angeles, CA</span><a href="index.html#main">Back to top ↑</a><span>Tools, pipelines &amp; real-time systems</span></footer></body></html>
