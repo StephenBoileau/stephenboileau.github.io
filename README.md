@@ -23,6 +23,7 @@ Open http://127.0.0.1:8766/. Stop the server with Ctrl+C.
 - `blog.html`: blog home page, a list of post cards (newest first).
 - `blog/`: one HTML file per post. `blog/_post-template.html` is a copy-and-fill template (files starting with `_` aren't published).
 - `contact.html`: compatibility redirect for existing links.
+- `boopbay/` and `boopbay/privacy/`: Boop Bay app support page and privacy policy. **Keep these URLs permanent**: they're registered in App Store Connect and the Google Play Console. No analytics or third-party scripts on these pages (it's a kids' app). Update the privacy policy and its effective date before shipping any app change in how it handles information.
 
 ## Adding a blog post
 
