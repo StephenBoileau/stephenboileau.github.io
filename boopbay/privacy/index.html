@@ -4,7 +4,9 @@
   Console: keep it at /boopbay/privacy/ permanently. No analytics, trackers or third-party
   embeds on this page (it's for a kids' app).
 
-  Every statement below matches the app's code as checked on 2026-10-17. If the app changes
+  Every statement below matches the app as checked on 2026-10-25 (version 0.3.0, the first
+  with the one-time "full game" purchase; Android facts checked against its release bundle).
+  If the app changes
   how it handles information (e.g. a parent voice-recording feature), update this page and
   the effective date BEFORE that version ships.
 -->
@@ -38,12 +40,12 @@
     <header class="post-header">
       <span class="eyebrow">BOOP BAY / PRIVACY</span>
       <h1>Boop Bay Privacy Policy</h1>
-      <p class="post-meta"><strong>Effective date:</strong> October 17, 2026</p>
+      <p class="post-meta"><strong>Effective date:</strong> October 25, 2026</p>
     </header>
 
     <div class="post-body">
       <p>
-        Boop Bay is a free learning game for young children, made by Stephen Boileau, an
+        Boop Bay is a learning game for young children, made by Stephen Boileau, an
         independent developer. This policy explains what the app does with information. In short:
         <strong>Boop Bay does not collect, store on any server, or share any personal information.</strong>
       </p>
@@ -52,22 +54,65 @@
       <p>
         None. Boop Bay has no accounts, sign-in or registration. It doesn't ask for names, email
         addresses, photos, location, contacts or any other personal information. It doesn't
-        collect device identifiers, and it doesn't track how anyone uses the app.
+        collect device identifiers, and it doesn't track how anyone uses the app. Purchases are
+        handled by Apple or Google, as described below.
       </p>
 
       <h2>Information stored on your device</h2>
       <p>
-        Boop Bay saves one setting on your device: the language you chose (English, Chinese or
-        Spanish). This setting stays on your device, is never sent anywhere, and is removed when
-        you delete the app. On first launch, the app checks your device's language setting, on
-        the device only, to choose a starting language.
+        Boop Bay saves a small settings file on your device: the language you chose (English,
+        Chinese or Spanish) and, if you bought the full game, a note that it was bought. This file
+        stays on your device, is never sent anywhere by Boop Bay, and is removed when you delete
+        the app. On first launch, the app checks your device's language setting, on the device
+        only, to choose a starting language.
       </p>
+
+      <h2>Buying the full game</h2>
+      <p>
+        Boop Bay has one optional in-app purchase: the full game, a one-time payment that opens
+        every lesson for good. There are no subscriptions and no ads.
+      </p>
+      <ul>
+        <li>
+          The purchase is on a &ldquo;For parents&rdquo; page, behind a grown-ups' question, so a
+          child can't reach it by accident.
+        </li>
+        <li>
+          Payment happens entirely in Apple's App Store or Google Play. Boop Bay never sees your
+          name, card details or account details. The store only tells the app whether the full
+          game was bought, and the app remembers that in its settings file on your device.
+        </li>
+        <li>
+          Each time it opens, Boop Bay asks the App Store or Google Play for the price, in your own
+          currency, and for any earlier purchase. That's how the full game comes back after a
+          reinstall or on a new device signed in to the same Apple ID or Google account.
+          &ldquo;Restore purchase&rdquo; on the For parents page does the same thing by hand.
+        </li>
+        <li>
+          Apple and Google handle purchases under their own privacy policies:
+          the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> and the
+          <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+        </li>
+      </ul>
 
       <h2>Internet, ads and third parties</h2>
       <p>
-        Boop Bay works fully offline and doesn't connect to the internet. It contains no
-        advertising, no analytics or tracking tools, no in-app purchases and no social features.
-        No third-party services receive any information from the app.
+        Boop Bay contains no advertising, no analytics or tracking tools of its own and no social
+        features. The lessons and the Playground play offline. Boop Bay's own code never sends
+        information anywhere. Checking the price and earlier purchases, buying and restoring go
+        through the App Store or Google Play, and may need an internet connection.
+      </p>
+      <p>
+        <strong>On iPhone and iPad,</strong> purchases go through Apple's StoreKit. Boop Bay
+        needs no extra permissions for this, and the app itself sends nothing.
+      </p>
+      <p>
+        <strong>On Android,</strong> Boop Bay includes Google Play's billing library, which Google
+        requires for in-app purchases. It adds three permissions: one to talk to the Play Store
+        app on your device (BILLING), and two used by Google libraries that the billing library
+        depends on (INTERNET and ACCESS_NETWORK_STATE). Those libraries send Google diagnostic
+        logs about the billing library itself. Boop Bay doesn't receive or control this
+        information; Google handles it under its own privacy policy.
       </p>
 
       <h2>Device features</h2>
@@ -88,7 +133,10 @@
       <h2>Your choices</h2>
       <p>
         There's nothing to request, correct or delete, because we don't hold any of your
-        information. To remove the language setting, delete the app.
+        information. To remove the settings file, delete the app. If you bought the full game,
+        it comes back when you install Boop Bay again with the same Apple ID or Google account.
+        For information Apple or Google hold about a purchase, contact them under their own
+        policies.
       </p>
 
       <h2>Changes to this policy</h2>
@@ -100,7 +148,7 @@
 
       <h2>Contact</h2>
       <p>
-        Questions about this policy: <a href="mailto:stephen.a.boileau@gmail.com">stephen.a.boileau@gmail.com</a>
+        Questions about this policy: <a href="mailto:boopbayapp@gmail.com">boopbayapp@gmail.com</a>
       </p>
     </div>
   </article>
